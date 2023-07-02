@@ -18,9 +18,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class FinancialFragment extends Fragment {
-
-
-
     String  api = "0cf67e07f24345539ba31cd914d3bbc3";
 
     ArrayList<ModelClass> modelClassArrayList;
@@ -30,8 +27,6 @@ public class FinancialFragment extends Fragment {
     private String category="entertainment";
 
     private RecyclerView recyclerViewoffin;
-
-
 
     @Override
     public View onCreateView( LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
@@ -68,10 +63,5 @@ public class FinancialFragment extends Fragment {
 
             }
         });
-
-
-
-
-
     }
 }

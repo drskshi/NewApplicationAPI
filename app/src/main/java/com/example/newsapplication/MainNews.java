@@ -8,10 +8,6 @@ public class MainNews {
     private String totalResults;
     private ArrayList<ModelClass> articles;
 
-
-
-
-
     public MainNews(String status, String totalResults, ArrayList<ModelClass> articles) {
         this.status = status;
         this.totalResults = totalResults;

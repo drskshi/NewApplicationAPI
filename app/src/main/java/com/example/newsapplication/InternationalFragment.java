@@ -18,19 +18,12 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class InternationalFragment extends Fragment {
-
-
     String api= "0cf67e07f24345539ba31cd914d3bbc3";
-
     ArrayList<ModelClass> modelClassArrayList;
     Adapter adapter;
     String country="us";
-
     private String category="health";
     private RecyclerView recyclerViewofIN;
-
-
-
     @Override
     public View onCreateView( LayoutInflater inflater,  ViewGroup container,  Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.internationalfragment, null);
@@ -45,7 +38,6 @@ public class InternationalFragment extends Fragment {
 
         return v;
     }
-
     private void findNews() {
 
         ApiUtilies.getApiInterface().getNews(country, 100, api).enqueue(new Callback<MainNews>() {
@@ -57,19 +49,10 @@ public class InternationalFragment extends Fragment {
                     modelClassArrayList.addAll(response.body().getArticles());
                     adapter.notifyDataSetChanged();
                 }
-
-
             }
-
             @Override
             public void onFailure(Call<MainNews> call, Throwable t) {
-
             }
         });
-
-
-
-
-
-    }
+            }
 }

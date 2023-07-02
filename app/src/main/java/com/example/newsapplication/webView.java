@@ -10,7 +10,6 @@ import android.widget.Toolbar;
 
 public class webView extends AppCompatActivity {
 
-
     Toolbar toolbar;
     WebView webView;
 
@@ -29,9 +28,6 @@ public class webView extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl(url);
 
-
-
-        // Rest of your code here
     }
 
     private void setSupportActionBar(Toolbar toolbar) {

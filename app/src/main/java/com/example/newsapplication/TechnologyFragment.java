@@ -56,8 +56,6 @@ public class TechnologyFragment extends Fragment {
                     modelClassArrayList.addAll(response.body().getArticles());
                     adapter.notifyDataSetChanged();
                 }
-
-
             }
 
             @Override
